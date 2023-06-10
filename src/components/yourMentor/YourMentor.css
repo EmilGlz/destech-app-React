@@ -4,7 +4,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #FFFFFF;
+}
+
+.container{
+    flex-direction: column;
 }
 
 .about{
@@ -13,6 +16,7 @@
     margin-left : 100px;
     margin-top : 150px ;
 }
+
 .photo{
     flex-basis: 25%;
     width: 300px;

@@ -1,5 +1,6 @@
 import React from "react";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 type NavbarProps = {
   links: { title: string; url: string }[];
@@ -13,7 +14,9 @@ const Navbar: React.FC<NavbarProps> = ({ links }) => {
         <ul className="nav__links">
           {links.map((link, index) => (
             <li key={index}>
-              <a href={link.url}>{link.title}</a>
+              <Link to={link.url}>
+                <a>{link.title}</a>
+              </Link>
             </li>
           ))}
         </ul>
