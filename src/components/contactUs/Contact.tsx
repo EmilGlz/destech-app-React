@@ -1,6 +1,6 @@
 import React from "react";
 import "./Contact.css";
-
+import Map from "./map/Map";
 const Contact = () => {
   return (
     <div className="about-container">
@@ -18,6 +18,11 @@ const Contact = () => {
           <p>+994 55 558 85 81</p>
         </div>
       </div>
+      <div className="div-address">
+        <h1>Ünvan</h1>
+        <img className="about-underline" src="underline.png"></img>
+      </div>
+      <Map />
     </div>
   );
 };
