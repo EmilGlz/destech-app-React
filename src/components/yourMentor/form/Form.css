@@ -1,0 +1,63 @@
+form-container{
+    width: 400px;
+ 
+}
+.content{
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+}
+.description{
+    display: inline;
+}
+h1{
+    text-align: center;
+    font-family: 'Poppins';
+
+}
+input{
+    width: 400px;
+    height: 50px;
+    border: 1px solid #252427;
+    border-radius: 8px;
+    margin: 5px;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    align-items: center;
+}
+select{
+    text-align: start;
+    width: 400px;
+    height: 50px;
+    border: 1px solid #252427;
+    border-radius: 8px;
+    margin: 5px;
+    padding-left: 10px;
+    padding-right: 30px;
+    margin-bottom: 15px;
+}
+.submit-form{
+    margin: 5px;
+    width: 400px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.p-link {  
+    display: inline-flex;
+    max-height: 20px;
+    width: 400px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.p-link a {
+    margin-left: 8px;
+    margin-right: 8px;
+    color: #000AFF;
+}

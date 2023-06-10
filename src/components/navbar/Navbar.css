@@ -7,56 +7,81 @@
     background-color: #FFFFFF;
 }
 
-li, a, button{
+li, a, button {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     text-decoration: none;
 }
 
-button{
-    font-size: 20px;
-    color: #FFFFFF;
-}
 
-.header{
+
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
 }
-
-.nav__links{
+button {
+    font-size: 20px;
+    color: #FFFFFF;
+    display: block;
+}
+.nav__links {
     list-style: none;
+    display: flex; /* Add flex display */
 }
 
-.nav__links li{
-    display: inline-block;
+.nav__links li {
     padding: 0px 20px;
 }
 
-.nav__links a{
-    font-size: 20;
+.nav__links a {
+    font-size: 20px;
     color: #000000;
 }
 
-.nav__links li a{
+.nav__links li a {
     transition: all 0.3s ease 0s;
 }
 
-.nav__links li a:hover{
+.nav__links li a:hover {
     color: #0088a9;
 }
 
-button{
+button {
     padding: 9px 25px;
     background-color: #000000;
     border: none;
-    border-radius: 50px;
-    cursor:pointer;
+    border-radius: 10px;
+    cursor: pointer;
     transition: all 0.3s ease 0s;
 }
 
-button:hover{
-    background-color: rgba(0,0, 0, 0.5);
+button:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
 
+/* Media Query for Mobile Devices */
+@media (max-width: 767px) {
+    .header {
+        padding: 20px;
+    }
+
+    .nav__links {
+        flex-direction: column; /* Change flex direction to stack vertically */
+    }
+
+    .nav__links li {
+        padding: 10px 0;
+    }
+
+    .nav__links li a {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 6px 15px;
+        margin-top: 10px; /* Add margin between links and button */
+    }
 }
