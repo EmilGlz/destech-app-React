@@ -13,15 +13,16 @@ form-container{
 h1{
     text-align: center;
 }
-input{
+.form-container input{
+    text-align: start;
     width: 400px;
     height: 50px;
     border: 1px solid #252427;
     border-radius: 8px;
     margin: 5px;
     padding-left: 10px;
+    padding-right: 30px;
     margin-bottom: 15px;
-    align-items: center;
 }
 select{
     text-align: start;
@@ -39,6 +40,7 @@ select{
     width: 400px;
     height: 50px;
     margin-top: 20px;
+    color:#252427;
 }
 
 .p-link {  

@@ -1,0 +1,119 @@
+.popup-background
+{
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.popup-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: #000aff;
+    justify-content: center;
+    height: 70%;
+    width: 60%;
+    border-radius: 90px;
+    padding: 20px;
+    background-color: whitesmoke;
+  }
+  form {
+    background-color: transparent;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 600px;
+    width: 80%;
+    height: 400px;
+  }
+  
+  .popup-container input,
+  .popup-container select,
+  input[type="text"] {
+    background-color: whitesmoke;
+    padding: 10px;
+    width: 80%;
+    height: 15%;
+    border: 1px solid #252427;
+    border-radius: 8px;
+    margin: 5px;
+    padding-left: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .submit-popup {
+    margin: 5px;
+    width: 80%;
+    height: 15%;
+    margin-top: 20px;
+    color: #fff;
+  }
+  
+  .p-link {
+    display: inline-flex;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: 400;
+    background-color: transparent;
+    font-size: 12px;
+  }
+
+  option {
+    padding: 15px 10px; 
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  option:hover {
+    background-color: #ccc;
+  }
+  
+  option:checked {
+    background-color: #aaa;
+    color: #fff;
+  }
+  
+  .p-link a {
+background-color: transparent;
+    margin-left: 8px;
+    margin-right: 8px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #000aff;
+  }
+  
+  .content {
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .description {
+    background-color: transparent;
+    text-align: center;
+    width: 75%;
+    color: #605f5f;
+  }
+  
+.h1-popup {
+    background-color: transparent;
+    margin-bottom: 20px;
+    font-family: Poppins;
+    font-weight: 700;
+    text-align: center;
+    font-size: 42px;
+  }
+  

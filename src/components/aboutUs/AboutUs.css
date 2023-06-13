@@ -1,0 +1,42 @@
+.aboutus-container{
+    overflow-x: hidden;
+}
+
+.aboutus-description{
+    display: flex;
+    margin-top: 200px;
+    margin-left: 45%;
+    margin-right: 40px;
+    flex-direction: column;
+}
+.team-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+.aboutus-h1{
+    text-align: start;
+    font-weight: 700;
+    font-size: 60px;
+}
+.underline{
+    width: 80%;
+    object-fit: contain;
+}
+.aboutus-p{
+    margin-top: 50px;
+}
+.about-us-h1{
+    text-align: start;
+    margin-top: 89px;
+    font-weight: 700;
+}
+.image-h1{
+    margin-top: 200px;
+    margin-bottom: 140px;
+    font-weight: 700;
+    font-size: 50px;
+}
