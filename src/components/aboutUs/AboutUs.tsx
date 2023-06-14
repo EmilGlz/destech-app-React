@@ -1,5 +1,6 @@
 import React from "react";
 import { workersData } from "../../constants/Consts";
+import { countStats } from "../../constants/Consts";
 import Individual from "./team/Individual";
 
 import "./AboutUs.css";
@@ -15,9 +16,11 @@ const AboutUs = () => {
           artmaqdadır.hal hazırda həm dizayn həm texnologiya sahəsində ilk
           interaktiv onlayntədrisi həyata keçirən platforma DesTechdir.
         </p>
-        <h1 className="about-us-h1">+1000 tələbə 😜</h1>
-        <h1 className="about-us-h1">+840 məzun ✌🏻</h1>
-        <h1 className="about-us-h1">+780 işləyən tələbə 😌</h1>
+        <h1 className="about-us-h1">+{countStats.students} tələbə 😜</h1>
+        <h1 className="about-us-h1">+{countStats.graduates} məzun ✌🏻</h1>
+        <h1 className="about-us-h1">
+          +{countStats.workingStudents} işləyən tələbə 😌
+        </h1>
       </div>
       <div className="image-container">
         <h1 className="image-h1">Komandamız</h1>

@@ -1,0 +1,33 @@
+.faq-item {
+    margin-bottom: 10px;
+}
+
+.faq-question {
+  border-radius: 10px;
+  background-color: #0000FF;
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+.faq-answer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 200px;
+  transition: max-height 0.3s ease;
+}
+
+.open-icon{
+  position: absolute;
+  right: 20px;
+}

@@ -6,16 +6,17 @@ import Contact from "./components/contactUs/Contact";
 import { Routes, Route } from "react-router-dom";
 import NoPage from "./components/noPage/NoPage";
 import AboutUs from "./components/aboutUs/AboutUs";
-import Popup from "./components/popup/Popup";
+import WebDesign from "./components/webDesign/WebDesign";
 
 function App() {
   return (
     <>
       <Navbar links={navbarData} />
       <Routes>
+        <Route path="/" element={<AboutUs />} />
         <Route path="contact" element={<Contact />} />
         <Route path="mentor" element={<YourMentor />} />
-        <Route path="/" element={<AboutUs />} />
+        <Route path="/courses" element={<WebDesign />} />
         <Route path="*" element={<NoPage />} />
       </Routes>
     </>
