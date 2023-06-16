@@ -1,6 +1,7 @@
 form-container{
     width: 400px;
- 
+    display: flex;
+    flex-direction: column;
 }
 .content{
     width: 400px;

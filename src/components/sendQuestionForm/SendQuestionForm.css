@@ -1,6 +1,15 @@
 .form-container{
     display: flex;
+    width: 100%;
     justify-content: center;
-    flex-wrap: wrap;
-
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.question-input{
+    flex-direction: column;
+    background-color: aquamarine;
+    color: aqua;
+    width: 150px;
+    height: 100px;
 }

@@ -7,11 +7,13 @@ import { Routes, Route } from "react-router-dom";
 import NoPage from "./components/noPage/NoPage";
 import AboutUs from "./components/aboutUs/AboutUs";
 import WebDesign from "./components/webDesign/WebDesign";
+import ProductDesign from "./components/productDesign/ProductDesign";
 
 function App() {
   return (
     <>
       <Navbar links={navbarData} />
+      {/* <ProductDesign /> */}
       <Routes>
         <Route path="/" element={<AboutUs />} />
         <Route path="contact" element={<Contact />} />

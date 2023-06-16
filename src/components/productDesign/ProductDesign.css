@@ -1,0 +1,236 @@
+.title-container{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-left: 150px;
+    margin-right: 500px;
+}
+.title-h1{
+    font-size: 70px;
+    font-weight: 700;
+    width: 70%;
+}
+
+.boy-icon{
+    width: 200px;
+    height: 200px;
+}
+
+.time-container{
+    margin-top: 70px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}  
+.time-square{
+    height: 100px;
+    width: 25%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); 
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.time-square-title{
+    background-color: transparent;
+    color: #7671F6;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.time-square-content{
+    background-color: transparent;
+    color: #343434;
+    font-weight: 500;
+}
+
+.start-now-btn{
+    color: white;
+    background-color: #19191F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.whatisit-container{
+    margin-top: 150px;
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.whatisit-container p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.question-title{
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    text-align: start;
+}
+
+.whocanjoin-container{
+    margin-left: 150px;
+    margin-top: 150px;
+    margin-right: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.whocanjoin-container p{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.whatiwilllearn-title{
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 150px;
+}
+
+.whatiwilllearn-container{
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.whowillbedestech-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.whowillbedestech-profile{
+    display: flex;
+    flex-basis: 40%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.whowillbedestech-content{
+    flex-basis: 60%;
+    font-size: 20px;
+    margin-top: 30px;
+    color: #707070;
+}
+
+.whowillbedestech-circle{
+    object-fit: contain;
+    width: 300px;
+    height: 300px;
+}
+
+.linkedn-icon{
+    width: 50px;
+    height: 50px;
+}
+
+.whowillbedestech-profile p{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.admission-process-container{
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 150px;
+}
+
+.admission-process-p{
+    font-size: 20px;
+    color: #707070;
+    width: 60%;
+}
+
+.admission-ways{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.admission-way{
+    width: 100px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.admission-way img{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.admission-way p{
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.whatgraduatessay-container{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+.whatgraduatessay-left{
+    margin-top: 0px;
+    width: 50%;
+    margin-left: 150px;
+}
+.whatgraduatessay-right{
+    margin-top: 100px;
+    width: 50%;
+    margin-right: 150px;
+}
+.graduation-title-left{
+    margin-bottom: 100px;
+}
+
+.faq-container{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.have-questions-container{
+    margin-top: 100px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.have-questions-container img{
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+.have-questions-container h1{
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.have-questions-container p{
+    font-size: 20px;
+    font-weight: 500;
+    width: 50%;
+    text-align: center;
+}

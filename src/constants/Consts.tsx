@@ -47,6 +47,20 @@ export const thoughtsFromGraduates = [
       "İlk öncə okuduğum müddətdə bu kurs mənə səmimi mentorlar qazandırdı Onlar sayəsində Daha dərin məlumatlara yiyələndim.",
     image: "happy-face.png",
   },
+  {
+    fullName: "Firuza Aliyeva ",
+    jobTitle: "",
+    description:
+      "Destech sayəsində hal hazırda özümü tapdığımı düşünürəmvə UX UI dizayner olaraq karyera həyatıma davam etməyi planlayıram.",
+    image: "girlFace.png",
+  },
+  {
+    fullName: "Gülnar Hüseynli  ",
+    jobTitle: "Madsbay, Estonia",
+    description:
+      "Destech-ə müraciət etmədən öncə freelance iş barəsində heç bir məlumatımyox idi. Lakin artıq qlobalda iş sahibiyəm.",
+    image: "happyGirlFace.png",
+  },
 ];
 
 export const whoWillBeDestech = [
@@ -60,13 +74,50 @@ export const whoWillBeDestech = [
   },
 ];
 
+export const whatWillLearnInProductDesign = [
+  {
+    title: "UX təməlləri ✌🏻",
+    description:
+      "Bu modul çərçivəsində ələbələr User Experience anlayışı və sahəylə bağlı ilkin tanışlıq əldə edir.",
+  },
+  {
+    title: "Kəşf mərhələri 😍",
+    description:
+      "İstifadəçi Araşdırması nədir, Niyə və Necə Edilir? Dərin Müsahibə və Sualların Hazırlanması",
+  },
+  {
+    title: "İstifadəçi Testi 🥰",
+    description: "İstifadə Prinsipləri ilə İnsanı Anlamaq",
+  },
+  {
+    title: "Dizayn prinsipləri 😎",
+    description: "Əsas Dizayn Prinsipləri, moodboard, trendlər",
+  },
+  {
+    title: "Wireframe 💁🏻",
+    description: "Dizayn prinsipləri ilə birgə məhsulun hazırlanması",
+  },
+  {
+    title: "Prototipləmə 🤪",
+    description:
+      "Prototipləşdirmə Metodundan Hansı Mərhələ və Məqsəddə İstifadə Olunur?",
+  },
+];
+
 export const whatIWillLearnInWebDesign = [
-  "Proqramlaşdırmanın əməlləri ✌🏻",
-  "GitHub 🧐",
-  "C# Proqramlaşdırma 🤩",
-  "HTLM5, CSS3, Javascript ilə Front end 😎",
-  "MS Sql – SQL 😌",
-  "ASP NET.5 framework 💁🏻",
+  {
+    description: "Proqramlaşdırmanın əməlləri ✌🏻",
+  },
+  {
+    description: "GitHub 🧐",
+  },
+  {
+    description: "C# Proqramlaşdırma 🤩",
+  },
+  {
+    description: "MS Sql – SQL 😌",
+  },
+  { description: "ASP NET.5 framework 💁🏻" },
 ];
 
 export const supportTexts = [
@@ -90,11 +141,7 @@ export const supportTexts = [
   },
 ];
 
-export const courseNames = [
-  "Qrafik Dizayn",
-  "Produkt Dizayn",
-  "Proqramlaşdırma",
-];
+export const courseNames = ["Qrafik Dizayn", "Produkt Dizayn"];
 
 export const workersData = [
   {

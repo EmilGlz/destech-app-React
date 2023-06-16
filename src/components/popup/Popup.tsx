@@ -1,6 +1,7 @@
-import React, { ChangeEvent, useState } from "react";
+import React, { ChangeEvent, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Popup.css";
+import { Url } from "../../constants/Url";
 
 interface MyFormState {
   name: string;
@@ -20,6 +21,17 @@ const Popup: React.FC<PopupProps> = ({ closePopup }) => {
     number: "",
     speciality: "",
   });
+  const [isRendered, setIsRendered] = useState(false);
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setIsRendered((prevIsRendered) => !prevIsRendered);
+    }, 0);
+
+    return () => {
+      clearTimeout(timeoutId);
+    };
+  }, []);
 
   const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
     const { id, value } = e.target;
@@ -42,12 +54,36 @@ const Popup: React.FC<PopupProps> = ({ closePopup }) => {
   };
 
   const handleSubmit = (e: React.FormEvent) => {
-    alert(formState.email);
+    const dataForMail = {
+      to: formState.email,
+      subject: "the first mail",
+      body: JSON.stringify(formState),
+    };
+
+    fetch(Url + "/api/main", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(dataForMail),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        alert(data);
+      })
+      .catch((error) => {
+        alert("Error:" + error);
+      });
   };
 
   return (
     <div onClick={closePopup} className="popup-background">
-      <section onClick={handleChildClick} className="popup-container">
+      <section
+        onClick={handleChildClick}
+        className={`popup-container animated-component ${
+          isRendered ? "animate" : ""
+        }`}
+      >
         <div className="content">
           <h1 className="h1-popup">Qeydiyyatdan keç 😍</h1>
           <p className="description">

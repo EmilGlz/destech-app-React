@@ -1,5 +1,6 @@
 import React, { ChangeEvent, FormEvent, useState } from "react";
 import "./Form.css";
+import { Url } from "../../../constants/Url";
 interface MyFormState {
   name: string;
   email: string;
@@ -32,9 +33,25 @@ const Form = () => {
   };
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    // Perform form submission logic here
-    // Access the form values using formState.input1, formState.input2, etc.
+    const dataForMail = {
+      to: formState.email,
+      subject: "the first mail",
+      body: JSON.stringify(formState),
+    };
+    fetch(Url + "api/main", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(dataForMail),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
   };
 
   return (
