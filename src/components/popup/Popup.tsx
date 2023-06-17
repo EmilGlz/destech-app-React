@@ -1,7 +1,7 @@
 import React, { ChangeEvent, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Popup.css";
-import { Url } from "../../constants/Url";
+import { LocalUrl, Url } from "../../constants/Url";
 
 interface MyFormState {
   name: string;
@@ -54,25 +54,34 @@ const Popup: React.FC<PopupProps> = ({ closePopup }) => {
   };
 
   const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+
     const dataForMail = {
       to: formState.email,
       subject: "the first mail",
-      body: JSON.stringify(formState),
+      body: formState.number,
     };
 
     fetch(Url + "/api/main", {
       method: "POST",
+      mode: "cors", // Add this line to enable CORS
+      cache: "no-cache",
+      credentials: "same-origin",
       headers: {
         "Content-Type": "application/json",
       },
+      redirect: "follow",
+      referrerPolicy: "no-referrer",
       body: JSON.stringify(dataForMail),
     })
-      .then((response) => response.json())
+      .then((response) => response.text())
       .then((data) => {
         alert(data);
+        console.log(data);
       })
       .catch((error) => {
-        alert("Error:" + error);
+        alert("Error: " + error);
+        console.log("error");
       });
   };
 

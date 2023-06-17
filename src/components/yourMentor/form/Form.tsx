@@ -1,6 +1,6 @@
 import React, { ChangeEvent, FormEvent, useState } from "react";
 import "./Form.css";
-import { Url } from "../../../constants/Url";
+import { LocalUrl, Url } from "../../../constants/Url";
 interface MyFormState {
   name: string;
   email: string;
@@ -36,13 +36,16 @@ const Form = () => {
     const dataForMail = {
       to: formState.email,
       subject: "the first mail",
-      body: JSON.stringify(formState),
+      body: formState,
     };
-    fetch(Url + "api/main", {
+    fetch(LocalUrl + "api/main", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
+        Cache: "no-cache",
+        "X-Requested-With": "rest",
       },
+
       body: JSON.stringify(dataForMail),
     })
       .then((response) => response.json())
