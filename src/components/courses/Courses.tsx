@@ -1,8 +1,9 @@
 import React from "react";
-import { countStats } from "../../constants/Consts";
+import { countStats, thoughtsFromGraduates } from "../../constants/Consts";
 import { supportTexts } from "../../constants/Consts";
 import { courseNames } from "../../constants/Consts";
 import "./Courses.css";
+import StudentComment from "../studentComment/StudentComment";
 const Courses = () => {
   return (
     <div className="container">
@@ -40,9 +41,35 @@ const Courses = () => {
       <div className="course-names-container">
         {courseNames.map((item, index) => (
           <div key={index} className="course-name-square">
-            <p>{item}</p>
+            <p className="course-name-p">{item}</p>
           </div>
         ))}
+      </div>
+
+      <div className="whatgraduatessay-container">
+        <h1 className="question-title graduation-title-left">
+          Məzunlarımızdan fikirlər 🎓
+        </h1>
+        <div className="inner-container">
+          <img className="gradient" src="purpleGradient.png"></img>
+          <div className="whatgraduatessay-left">
+            <StudentComment data={thoughtsFromGraduates[0]} />
+          </div>
+          <div className="whatgraduatessay-right">
+            <StudentComment data={thoughtsFromGraduates[1]} />
+          </div>
+        </div>
+        <div className="inner-container">
+          <div className="whatgraduatessay-left-mid">
+            <StudentComment data={thoughtsFromGraduates[0]} />
+          </div>
+          <div className="whatgraduatessay-right-left">
+            <StudentComment data={thoughtsFromGraduates[1]} />
+          </div>
+        </div>
+        <div className="whatgraduatessay-mid">
+          <StudentComment data={thoughtsFromGraduates[0]} />
+        </div>
       </div>
     </div>
   );

@@ -98,10 +98,14 @@ p h1{
     flex-direction: row;
     justify-content: center;
 }
-
 .course-name-square
 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
     width: 25%;
+
     height: 120px;
     text-align: center;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); 
@@ -115,4 +119,77 @@ p h1{
     font-size: 30px;
     font-weight: 500;
     align-items: center;
+}
+
+.whatisit-container{
+    margin-top: 150px;
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    flex-direction: column;
+}
+.whatgraduatessay-container{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.inner-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.gradient{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    top: 0;
+}
+
+.whatisit-container p{
+    font-size: 20px;
+    font-weight: 500;
+    height: 100px;
+}
+
+
+.whatgraduatessay-left{
+   display: flex;
+   width: 50%;
+   align-items: start;
+   justify-content: end;
+}
+.whatgraduatessay-right{
+    width: 50%;
+    display: flex;
+    margin-top: 100px;
+    align-items:center;
+    justify-content: center;
+}
+.whatgraduatessay-left-mid{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.whatgraduatessay-mid{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100px;
+}
+.whatgraduatessay-right-left{
+    width: 50%;
+    display: flex;
+    align-items: end;
+    justify-content: left;
+}
+.graduation-title-left{
+    margin-bottom: 80px;
+    height: 100px;
 }

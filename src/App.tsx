@@ -8,19 +8,21 @@ import NoPage from "./components/noPage/NoPage";
 import AboutUs from "./components/aboutUs/AboutUs";
 import WebDesign from "./components/webDesign/WebDesign";
 import ProductDesign from "./components/productDesign/ProductDesign";
-
+import Courses from "./components/courses/Courses";
+import StudentComment from "./components/studentComment/StudentComment";
 function App() {
   return (
     <>
       <Navbar links={navbarData} />
       {/* <ProductDesign /> */}
-      <Routes>
+      <Courses />
+      {/* <Routes>
         <Route path="/" element={<AboutUs />} />
         <Route path="contact" element={<Contact />} />
         <Route path="mentor" element={<YourMentor />} />
         <Route path="/courses" element={<WebDesign />} />
         <Route path="*" element={<NoPage />} />
-      </Routes>
+      </Routes> */}
     </>
   );
 }
