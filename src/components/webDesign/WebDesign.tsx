@@ -126,6 +126,7 @@ const WebDesign = () => {
           <GraduatePanel data={thoughtsFromGraduates[1]} />
         </div>
       </div>
+
       <h1 className="question-title whatiwilllearn-title">
         Sizin suallarınızı cavabladıq!😍
       </h1>
