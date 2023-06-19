@@ -101,7 +101,7 @@ const Popup: React.FC<PopupProps> = ({ closePopup }) => {
           </p>
         </div>
 
-        <form onSubmit={handleSubmit}>
+        <form className="popup-form" onSubmit={handleSubmit}>
           <input
             id="name"
             className="name"
