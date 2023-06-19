@@ -8,6 +8,12 @@
     margin-left: 100px;
     flex-direction: column;
 }
+.aboutus-h1{
+    font-weight: 800;
+    font-size: 60px;
+    width: 80%;
+
+}
 .underline{
     margin-top: 20px;
     width: 80%;
@@ -15,7 +21,10 @@
 }
 
 .courses-p{
+    width: 50%;
     margin-top: 40px;
+    font-weight: 600;
+    font-size: large;
 }
 p h1{
     color: black;
@@ -136,18 +145,16 @@ p h1{
 .inner-container{
     display: flex;
     flex-direction: row;
+    position: relative;
 }
 
 .gradient{
     position: absolute;
-    width: 400px;
-    height: 400px;
+    width: 1000px;
+    height: 1300px;
+    left: 20%;
     z-index: -1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: translate(-50%, -50%);
-    top: 0;
+    opacity: 0.65;
 }
 
 .whatisit-container p{
@@ -161,6 +168,7 @@ p h1{
    display: flex;
    width: 50%;
    align-items: start;
+   position: relative;
    justify-content: end;
 }
 .whatgraduatessay-right{
@@ -168,6 +176,7 @@ p h1{
     display: flex;
     margin-top: 100px;
     align-items:center;
+    position: relative;
     justify-content: center;
 }
 .whatgraduatessay-left-mid{
@@ -181,7 +190,6 @@ p h1{
     text-align: center;
     display: flex;
     justify-content: center;
-    width: 100px;
 }
 .whatgraduatessay-right-left{
     width: 50%;
@@ -190,6 +198,16 @@ p h1{
     justify-content: left;
 }
 .graduation-title-left{
+    display: flex;
+    justify-content: center;
     margin-bottom: 80px;
     height: 100px;
+}
+.question-answer-h1{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    font-weight: 800;
+    font-size: xx-large;
+    margin-top: 20px;
 }

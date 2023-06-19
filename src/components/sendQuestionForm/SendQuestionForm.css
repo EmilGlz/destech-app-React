@@ -6,10 +6,23 @@
     text-align: center;
     flex-direction: column;
 }
-.question-input{
-    flex-direction: column;
-    background-color: aquamarine;
-    color: aqua;
-    width: 150px;
-    height: 100px;
+.question-input-send-question{
+    background-color: whitesmoke;
+    padding: 10px;
+    width: 40%;
+    height: 15%;
+    border: 1px solid #252427;
+    border-radius: 8px;
+    margin: 5px;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.input-container{
+    width: 100%;
+}
+form{
+    width: 100%;
 }

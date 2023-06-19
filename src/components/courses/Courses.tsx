@@ -4,6 +4,7 @@ import { supportTexts } from "../../constants/Consts";
 import { courseNames } from "../../constants/Consts";
 import "./Courses.css";
 import StudentComment from "../studentComment/StudentComment";
+import SendQuestionForm from "../sendQuestionForm/SendQuestionForm";
 const Courses = () => {
   return (
     <div className="container">
@@ -67,10 +68,15 @@ const Courses = () => {
             <StudentComment data={thoughtsFromGraduates[1]} />
           </div>
         </div>
-        <div className="whatgraduatessay-mid">
-          <StudentComment data={thoughtsFromGraduates[0]} />
-        </div>
       </div>
+      <div className="whatgraduatessay-mid">
+        <StudentComment data={thoughtsFromGraduates[0]} />
+      </div>
+
+      <h1 className="question-answer-h1">
+        Yeni karyeranda ilk addımı DesTech-də at!
+      </h1>
+      <SendQuestionForm />
     </div>
   );
 };

@@ -10,12 +10,14 @@ import WebDesign from "./components/webDesign/WebDesign";
 import ProductDesign from "./components/productDesign/ProductDesign";
 import Courses from "./components/courses/Courses";
 import StudentComment from "./components/studentComment/StudentComment";
+import SendQuestionForm from "./components/sendQuestionForm/SendQuestionForm";
 function App() {
   return (
     <>
       <Navbar links={navbarData} />
-      {/* <ProductDesign /> */}
-      <Courses />
+      <ProductDesign />
+      {/* <Courses /> */}
+      {/* <SendQuestionForm /> */}
       {/* <Routes>
         <Route path="/" element={<AboutUs />} />
         <Route path="contact" element={<Contact />} />
