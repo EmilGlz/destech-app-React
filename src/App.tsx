@@ -16,7 +16,7 @@ function App() {
     <>
       <Navbar links={navbarData} />
       <ProductDesign />
-      {/* <Courses /> */}
+      <Courses />
       {/* <SendQuestionForm /> */}
       {/* <Routes>
         <Route path="/" element={<AboutUs />} />
