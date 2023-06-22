@@ -55,7 +55,7 @@ const WebDesign = () => {
         <p>• Mütəxəssis programcı olmaz istəyənlər, 😎</p>
         <p>• Heç bir ön bilik tələb olunur 🤩</p>
         <p>• Bu dünyaya yeni addım atma istəyənlər 🥰</p>
-        <p> • Riyaziyyat və ya yaşı mühəndis olmağınız ehtiyyac yoxdur😌</p>
+        <p>• Riyaziyyat və ya yaşı mühəndis olmağınız ehtiyyac yoxdur😌</p>
       </div>
       <h1 className="question-title whatiwilllearn-title">Nələr öyrənəcəm?</h1>
       <div className="whatiwilllearn-container">

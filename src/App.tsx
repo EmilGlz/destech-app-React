@@ -15,16 +15,15 @@ function App() {
   return (
     <>
       <Navbar links={navbarData} />
-      <ProductDesign />
-      <Courses />
-      {/* <SendQuestionForm /> */}
-      {/* <Routes>
-        <Route path="/" element={<AboutUs />} />
+      <Routes>
+        <Route path="/" element={<Courses />} />
         <Route path="contact" element={<Contact />} />
         <Route path="mentor" element={<YourMentor />} />
-        <Route path="/courses" element={<WebDesign />} />
+        <Route path="courses" element={<Courses />} />
+        <Route path="/product-dizayn" element={<ProductDesign />} />
+        <Route path="/qrafik-dizayn" element={<WebDesign />} />
         <Route path="*" element={<NoPage />} />
-      </Routes> */}
+      </Routes>
     </>
   );
 }

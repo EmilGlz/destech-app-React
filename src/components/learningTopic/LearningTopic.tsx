@@ -9,7 +9,7 @@ type TopicProps = {
 const LearningTopic: React.FC<TopicProps> = ({ data }) => {
   return (
     <div className="topic-container">
-      {data.title && <p className="title">{data.title}</p>}
+      {<p className="learn-topic-title">{data.title}</p>}
       <p>{data.description}</p>
     </div>
   );

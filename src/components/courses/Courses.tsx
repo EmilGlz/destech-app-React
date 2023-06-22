@@ -6,8 +6,20 @@ import "./Courses.css";
 import StudentComment from "../studentComment/StudentComment";
 import SendQuestionForm from "../sendQuestionForm/SendQuestionForm";
 import BlueCube from "../blueCube/BlueCube";
+import { Route, Routes, useNavigate } from "react-router-dom";
+import WebDesign from "../webDesign/WebDesign";
+import ProductDesign from "../productDesign/ProductDesign";
 
 const Courses = () => {
+  const navigate = useNavigate();
+  function getCourseName(courseName: string) {
+    if (courseName === "Qrafik Dizayn") {
+      navigate(`/qrafik-dizayn`);
+    } else {
+      navigate(`/product-dizayn`);
+    }
+  }
+
   return (
     <div className="container">
       <div className="courses-description">
@@ -44,7 +56,9 @@ const Courses = () => {
       <div className="course-names-container">
         {courseNames.map((item, index) => (
           <div key={index} className="course-name-square">
-            <p className="course-name-p">{item}</p>
+            <p className="course-name-p" onClick={() => getCourseName(item)}>
+              {item}
+            </p>
           </div>
         ))}
       </div>
