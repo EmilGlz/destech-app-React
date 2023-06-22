@@ -131,14 +131,6 @@ const ProductDesign = () => {
       <div className="faq-container">
         <Faq />
       </div>
-      <div className="have-questions-container">
-        <h1>Sualın var ?</h1>
-        <img className="underline" src="underline.png" alt="" />
-        <p>
-          Aşağıdaki formu dolduraq, səninlə əlaqə yaradıb bütün suallarını
-          cavablaya bilərik!
-        </p>
-      </div>
       <SendQuestionForm />
     </div>
   );

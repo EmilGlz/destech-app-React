@@ -5,6 +5,8 @@ import { courseNames } from "../../constants/Consts";
 import "./Courses.css";
 import StudentComment from "../studentComment/StudentComment";
 import SendQuestionForm from "../sendQuestionForm/SendQuestionForm";
+import BlueCube from "../blueCube/BlueCube";
+
 const Courses = () => {
   return (
     <div className="container">
@@ -76,6 +78,23 @@ const Courses = () => {
       <h1 className="question-answer-h1">
         Yeni karyeranda ilk addımı DesTech-də at!
       </h1>
+      <div className="mid-blue-cube">
+        <div className="cube-1">
+          <BlueCube />
+        </div>
+        <div className="cube-2">
+          <BlueCube />
+        </div>
+        <div className="right-blue-cube">
+          <div className="cube-3">
+            <BlueCube />
+          </div>
+          <div className="cube-4">
+            <BlueCube />
+          </div>
+        </div>
+      </div>
+
       <SendQuestionForm />
     </div>
   );

@@ -29,6 +29,14 @@ const SendQuestionForm = () => {
 
   return (
     <div className="test">
+      <div className="have-questions-container">
+        <h1>Sualın var ?</h1>
+        <img className="underline" src="underline.png" alt="" />
+        <p>
+          Aşağıdaki formu dolduraq, səninlə əlaqə yaradıb bütün suallarını
+          cavablaya bilərik!
+        </p>
+      </div>
       <div className="form-container">
         <form className="send-question-form" onSubmit={handleSubmit}>
           <input

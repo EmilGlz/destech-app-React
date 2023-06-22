@@ -1,0 +1,7 @@
+.blue-cube-img{
+    border-radius: 50px;
+    overflow: hidden;
+    width: 100%;
+    height: 200px;
+    box-sizing: border-box
+}

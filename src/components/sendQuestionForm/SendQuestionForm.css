@@ -6,6 +6,31 @@
     text-align: center;
     flex-direction: column;
 }
+.have-questions-container{
+    margin-top: 100px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.have-questions-container img{
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.have-questions-container h1{
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.have-questions-container p{
+    font-size: 20px;
+    font-weight: 500;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 25px;
+}
 .question-input-send-question{
     background-color: whitesmoke;
     padding: 10px;
@@ -23,6 +48,26 @@
 .input-container{
     width: 100%;
 }
-form{
-    width: 100%;
+
+.send-question-form{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row
+}
+.send-question-form input{
+    flex-basis: 35%;
+    height: 60px;
+    border-radius: 10px;
+    border: #252427;
+    margin: 15px;
+    flex-direction: row; 
+}
+.send-question-form button{
+    border-radius: 30px;
+    height: 70px;
+    margin-top: 30px;
+    width: 25%;
 }
