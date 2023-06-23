@@ -1,6 +1,6 @@
 import React, { ChangeEvent, FormEvent, useState } from "react";
 import "./Form.css";
-import { LocalUrl, Url } from "../../../constants/Url";
+import { LocalUrl } from "../../../constants/Url";
 interface MyFormState {
   name: string;
   email: string;
@@ -58,7 +58,7 @@ const Form = () => {
   };
 
   return (
-    <div className="form-container">
+    <div className="form-container-your-mentor">
       <div className="content">
         <h1>Sənin Mentorun 😍</h1>
         <p className="description">
@@ -69,32 +69,32 @@ const Form = () => {
       <form onSubmit={handleSubmit}>
         <div>
           <input
+            className="form-input-your-mentor"
             placeholder="Ad soyad"
             type="text"
             id="name"
             value={formState.name}
             onChange={handleInputChange}
           />
-        </div>
-        <div>
+
           <input
+            className="form-input-your-mentor"
             placeholder="Email"
             type="text"
             id="email"
             value={formState.email}
             onChange={handleInputChange}
           />
-        </div>
-        <div>
+
           <input
+            className="form-input-your-mentor"
             placeholder="Telefon nömrəsi"
             type="text"
             id="number"
             value={formState.number}
             onChange={handleInputChange}
           />
-        </div>
-        <div>
+
           <select
             id="date"
             value={formState.date}

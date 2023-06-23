@@ -74,10 +74,11 @@ const SendQuestionForm = () => {
             value={formState.phoneNumber}
             onChange={handleInputChange}
           />
-
-          <button className="submit-form" type="submit">
-            Müraciət et!
-          </button>
+          <div className="btn-container">
+            <button className="submit-form" type="submit">
+              Müraciət et!
+            </button>
+          </div>
         </form>
       </div>
     </div>

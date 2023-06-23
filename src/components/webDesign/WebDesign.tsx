@@ -115,14 +115,14 @@ const WebDesign = () => {
           <p>Qeydiyyatdan keç!</p>
         </div>
       </div>
-      <div className="whatgraduatessay-container">
-        <div className="whatgraduatessay-left">
-          <h1 className="question-title graduation-title-left">
-            Məzunlarımızdan fikirlər 🎓
-          </h1>
+      <h1 className="question-title graduation-left">
+        Məzunlarımızdan fikirlər 🎓
+      </h1>
+      <div className="whatgraduatessay-container-web-design">
+        <div className="whatgraduatessay-left-web-design">
           <GraduatePanel data={thoughtsFromGraduates[0]} />
         </div>
-        <div className="whatgraduatessay-right">
+        <div className="whatgraduatessay-right-web-design">
           <GraduatePanel data={thoughtsFromGraduates[1]} />
         </div>
       </div>
@@ -132,14 +132,6 @@ const WebDesign = () => {
       </h1>
       <div className="faq-container">
         <Faq />
-      </div>
-      <div className="have-questions-container">
-        <h1>Sualın var ?</h1>
-        <img className="underline" src="underline.png" alt="" />
-        <p>
-          Aşağıdaki formu dolduraq, səninlə əlaqə yaradıb bütün suallarını
-          cavablaya bilərik!
-        </p>
       </div>
       <SendQuestionForm />
     </div>

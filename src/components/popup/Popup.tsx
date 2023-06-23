@@ -138,11 +138,12 @@ const Popup: React.FC<PopupProps> = ({ closePopup }) => {
             <option value="UX/UI Dizayn">UX/UI Dizayn</option>
             <option value="Proqramlaşdırma">Proqramlaşdırma</option>
           </select>
-          <button className="submit-popup" type="submit">
-            Qeydiyyatdan keç!
-          </button>
+          <div className="popup-submit-form">
+            <button className="submit-popup" type="submit">
+              Qeydiyyatdan keç!
+            </button>
+          </div>
         </form>
-
         <p className="p-link">
           Daxil olmaqla siz{" "}
           <Link to="/gizlilik-siyaseti">Destech Gizlilik Siyasəti</Link> və{" "}

@@ -30,6 +30,7 @@
     width: 60%;
     border-radius: 90px;
     padding: 20px;
+    text-align: center;
     background-color: whitesmoke;
   }
   .popup-formb {
@@ -45,8 +46,7 @@
   }
   
   .popup-container input,
-  .popup-container select,
-  input[type="text"] {
+  .popup-container select{
     background-color: whitesmoke;
     padding: 10px;
     width: 80%;
@@ -67,6 +67,7 @@
   }
   
   .p-link {
+    margin-top: 5px;
     display: inline-flex;
     text-align: center;
     white-space: nowrap;
@@ -125,3 +126,10 @@ background-color: transparent;
     font-size: 42px;
   }
   
+  .popup-submit-form{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }

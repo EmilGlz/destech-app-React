@@ -185,26 +185,40 @@
     font-size: 15px;
 }
 
-.whatgraduatessay-container{
-    margin-top: 100px;
+.whatgraduatessay-container-product-design{
     display: flex;
     flex-direction: row;
+    height: 800px;
 }
 
-.whatgraduatessay-left{
-    margin-top: 0px;
+.whatgraduatessay-left-product-design{
+    display: flex;
+    justify-content: center;
+    align-items: end;
     width: 50%;
-    margin-left: 150px;
 }
-.whatgraduatessay-right{
+.whatgraduatessay-right-product-design{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 50%;
+}
+.graduation-title-left{
     margin-top: 100px;
     width: 50%;
     margin-right: 150px;
 }
-.graduation-title-left{
-    margin-bottom: 100px;
-}
 
+.graduation-title-product-design{
+    width: 20%;
+    margin-top: 70px;
+    display: flex;
+    justify-content: start;
+    margin-bottom: 80px;
+    margin-left: 30px;
+    height: 100px;
+    align-items: start;
+}
 .faq-container{
     margin-left: 150px;
     margin-right: 150px;

@@ -114,14 +114,14 @@ const ProductDesign = () => {
           <p>Qeydiyyatdan keç!</p>
         </div>
       </div>
-      <div className="whatgraduatessay-container">
-        <div className="whatgraduatessay-left">
-          <h1 className="question-title graduation-title-left">
-            Məzunlarımızdan fikirlər 🎓
-          </h1>
+      <h1 className="question-title graduation-title-product-design">
+        Məzunlarımızdan fikirlər 🎓
+      </h1>
+      <div className="whatgraduatessay-container-product-design">
+        <div className="whatgraduatessay-left-product-design">
           <GraduatePanel data={thoughtsFromGraduates[2]} />
         </div>
-        <div className="whatgraduatessay-right">
+        <div className="whatgraduatessay-right-product-design">
           <GraduatePanel data={thoughtsFromGraduates[3]} />
         </div>
       </div>

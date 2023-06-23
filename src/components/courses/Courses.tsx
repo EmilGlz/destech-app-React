@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { countStats, thoughtsFromGraduates } from "../../constants/Consts";
 import { supportTexts } from "../../constants/Consts";
 import { courseNames } from "../../constants/Consts";
@@ -6,12 +6,24 @@ import "./Courses.css";
 import StudentComment from "../studentComment/StudentComment";
 import SendQuestionForm from "../sendQuestionForm/SendQuestionForm";
 import BlueCube from "../blueCube/BlueCube";
-import { Route, Routes, useNavigate } from "react-router-dom";
+import { Form, Route, Routes, useNavigate } from "react-router-dom";
 import WebDesign from "../webDesign/WebDesign";
 import ProductDesign from "../productDesign/ProductDesign";
+import Popup from "../popup/Popup";
 
 const Courses = () => {
   const navigate = useNavigate();
+  const [popup, setPopup] = useState(false);
+
+  function eventListener() {
+    setPopup((prevVal) => !prevVal);
+  }
+
+  function closePopup() {
+    console.log(popup);
+
+    setPopup(false);
+  }
   function getCourseName(courseName: string) {
     if (courseName === "Qrafik Dizayn") {
       navigate(`/qrafik-dizayn`);
@@ -31,7 +43,10 @@ const Courses = () => {
           Karyeranda özünü dizayn və texnologiya sahəsində görürsənsə o zaman bu
           tədrislər tam sənin üçündür.
         </p>
-        <button className="courses-button">Indi başla!</button>
+        <button className="courses-button" onClick={eventListener}>
+          Indi başla!
+        </button>
+        {popup && <Popup closePopup={closePopup} />}
       </div>
       <div className="courses-stats">
         <h1 className="courses-stat">+{countStats.students} tələbə</h1>
