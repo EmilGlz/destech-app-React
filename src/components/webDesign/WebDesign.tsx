@@ -69,8 +69,8 @@ const WebDesign = () => {
       {whoWillBeDestech.map((item, index) => (
         <div key={index} className="whowillbedestech-container">
           <div className="whowillbedestech-profile">
-            <div className="circle whowillbedestech-circle">
-              <img src={item.image}></img>
+            <div className="who-can-apply-circle">
+              <img className="who-can-apply-individual" src={item.image}></img>
             </div>
             <p>{item.fullname}</p>
             <p>{item.jobTitle}</p>

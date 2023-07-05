@@ -8,10 +8,19 @@
     margin-left: 100px;
     flex-direction: column;
 }
+.courses-rocket-girl{
+    width: 40%;
+    flex-direction: row;
+    object-fit: cover;
+}
+.courses-img-desccription{
+    display: flex;
+    flex-direction: row;
+}
 .aboutus-h1{
     font-weight: 800;
     font-size: 60px;
-    width: 80%;
+    width: 70%;
 
 }
 .underline{
@@ -273,3 +282,4 @@ p h1{
     margin-top: 20px;
     margin-bottom: 50px;
 }
+

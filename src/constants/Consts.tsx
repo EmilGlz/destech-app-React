@@ -65,9 +65,9 @@ export const thoughtsFromGraduates = [
 
 export const whoWillBeDestech = [
   {
-    fullname: "Rauf Ağayev",
-    jobTitle: "Software Developer at Amazon",
-    image: "profile-photo.png",
+    fullname: "Solmaz Rzayeva",
+    jobTitle: "Product Designer",
+    image: "individual.png",
     description:
       "Güclü proqram təminatı dizaynı və inkişaf etdirmə bacarıqlarına malik təcrübəli Proqram Tərtibatçı. Ölçəklənən müəssisə xidmətlərinin qurulması təcrübəsi. Kodun səmərəliliyini, dəqiqliyini və etibarlılığını artırmaq üçün həvəslidir. Yeni texnologiyaları öyrənməkdən zövq alan, yaxşı ünsiyyət bacarıqlarına malik yaxşı komanda oyunçusu.",
     linkednURL: "https://www.linkedin.com/company/destechcom/",

@@ -32,19 +32,22 @@ const Courses = () => {
 
   return (
     <div className="container">
-      <div className="courses-description">
-        <h1 className="aboutus-h1">
-          Təhsilinizdə və karyeranızda ən büyük dəstəkçiniz!
-        </h1>
-        <img className="underline" src="underline.png" alt="" />
-        <p className="courses-p">
-          Karyeranda özünü dizayn və texnologiya sahəsində görürsənsə o zaman bu
-          tədrislər tam sənin üçündür.
-        </p>
-        <button className="courses-button" onClick={eventListener}>
-          Indi başla!
-        </button>
-        {popup && <Popup closePopup={closePopup} />}
+      <div className="courses-img-desccription">
+        <div className="courses-description">
+          <h1 className="aboutus-h1">
+            Təhsilinizdə və karyeranızda ən büyük dəstəkçiniz!
+          </h1>
+          <img className="underline" src="underline.png" alt="" />
+          <p className="courses-p">
+            Karyeranda özünü dizayn və texnologiya sahəsində görürsənsə o zaman
+            bu tədrislər tam sənin üçündür.
+          </p>
+          <button className="courses-button" onClick={eventListener}>
+            Indi başla!
+          </button>
+          {popup && <Popup closePopup={closePopup} />}
+        </div>
+        <img className="courses-rocket-girl" src="rocket-girl.png" />
       </div>
       <div className="courses-stats">
         <h1 className="courses-stat">+{countStats.students} tələbə</h1>

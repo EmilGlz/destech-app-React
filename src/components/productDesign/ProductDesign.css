@@ -248,3 +248,15 @@
     width: 50%;
     text-align: center;
 }
+
+
+.who-can-apply-circle{
+    background-color: rgba(196, 254, 0, 1);
+    border-radius: 50%;
+}
+
+.who-can-apply-individual{
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
