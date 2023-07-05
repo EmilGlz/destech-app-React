@@ -206,6 +206,10 @@ p h1{
     justify-content: center;
     margin-bottom: 80px;
     height: 100px;
+    text-align: center;
+}
+.whatgraduatessay-title{
+    width: 100%;
 }
 
 

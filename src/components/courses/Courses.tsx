@@ -6,9 +6,7 @@ import "./Courses.css";
 import StudentComment from "../studentComment/StudentComment";
 import SendQuestionForm from "../sendQuestionForm/SendQuestionForm";
 import BlueCube from "../blueCube/BlueCube";
-import { Form, Route, Routes, useNavigate } from "react-router-dom";
-import WebDesign from "../webDesign/WebDesign";
-import ProductDesign from "../productDesign/ProductDesign";
+import { useNavigate } from "react-router-dom";
 import Popup from "../popup/Popup";
 
 const Courses = () => {
@@ -79,8 +77,8 @@ const Courses = () => {
       </div>
 
       <div className="whatgraduatessay-container">
-        <h1 className="question-title graduation-title-left">
-          Məzunlarımızdan fikirlər 🎓
+        <h1 className="whatgraduatessay-title question-title graduation-title-left">
+          Tələbələrimizin rəyləri
         </h1>
         <div className="inner-container">
           <img className="gradient" src="purpleGradient.png"></img>

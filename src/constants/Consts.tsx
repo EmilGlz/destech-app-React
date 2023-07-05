@@ -146,72 +146,22 @@ export const courseNames = ["Qrafik Dizayn", "Produkt Dizayn"];
 export const workersData = [
   {
     fullName: "Ayxan Axundov",
-    position: "Frontendshik",
-    image: "blackObama.jpg",
+    position: "Frontend developer",
+    image: "obama.png",
   },
   {
-    fullName: "Emil Quluzade",
-    position: "Front",
-    image: "profile-photo.png",
+    fullName: "Emil Quluzadə",
+    position: "Frontend developer",
+    image: "trump.png",
   },
   {
-    fullName: "Ayxan Axundov",
-    position: "Frontendshik",
-    image: "blackObama.jpg",
+    fullName: "Sənan Məmmədov",
+    position: "Team Lead",
+    image: "biden.png",
   },
   {
-    fullName: "Emil Quluzade",
-    position: "Front",
-    image: "profile-photo.png",
-  },
-  {
-    fullName: "Emil Quluzade",
-    position: "Front",
-    image: "profile-photo.png",
-  },
-  {
-    fullName: "Emil Quluzade",
-    position: "Front",
-    image: "profile-photo.png",
-  },
-  {
-    fullName: "Emil Quluzade",
-    position: "Front",
-    image: "profile-photo.png",
-  },
-  {
-    fullName: "Emil Quluzade",
-    position: "Front",
-    image: "profile-photo.png",
-  },
-  {
-    fullName: "Emil Quluzade",
-    position: "Front",
-    image: "profile-photo.png",
-  },
-  {
-    fullName: "Emil Quluzade",
-    position: "Front",
-    image: "profile-photo.png",
-  },
-  {
-    fullName: "Emil Quluzade",
-    position: "Front",
-    image: "profile-photo.png",
-  },
-  {
-    fullName: "Emil Quluzade",
-    position: "Front",
-    image: "profile-photo.png",
-  },
-  {
-    fullName: "Emil Quluzade",
-    position: "Front",
-    image: "profile-photo.png",
-  },
-  {
-    fullName: "Emil Quluzade",
-    position: "Front",
-    image: "profile-photo.png",
+    fullName: "Zaur Cəfərov",
+    position: "Backend developer",
+    image: "lincoln.png",
   },
 ];
