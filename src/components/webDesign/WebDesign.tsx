@@ -115,7 +115,7 @@ const WebDesign = () => {
           <p>Qeydiyyatdan keç!</p>
         </div>
       </div>
-      <h1 className="question-title graduation-left">
+      <h1 className="question-title graduation-left-web-design">
         Məzunlarımızdan fikirlər 🎓
       </h1>
       <div className="whatgraduatessay-container-web-design">
