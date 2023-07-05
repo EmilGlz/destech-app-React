@@ -6,7 +6,7 @@ const Map = () => {
     <div className="div-map">
       <iframe
         className="map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12150.3775588958!2d49.80287665!3d40.417835499999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x403087af9f890515%3A0x405f9c293e527510!2sBaku%2Cavtova%C4%9Fzal!5e0!3m2!1sru!2saz!4v1686432961696!5m2!1sru!2saz"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.4284905030495!2d49.85137057591145!3d40.377194958044704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d079efb5163%3A0xc20aa51a5f0b5e01!2sCode%20Academy!5e0!3m2!1sru!2saz!4v1688596494435!5m2!1sru!2saz"
         width="600"
         height="450"
         loading="lazy"
